@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "../../../JavaScript/Async_JS"
+	},
+	{
+		"path": "../../../JavaScript/Advanced"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Advanced",
+    "git.ignoreLimitWarning": true
+  }
+}
