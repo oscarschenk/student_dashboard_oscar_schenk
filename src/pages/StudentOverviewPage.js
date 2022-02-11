@@ -8,7 +8,7 @@ import Footer from "../Components/Footer";
 function StudentOverviewPage() {
   const params = useParams();
   return (
-    <div className="flex flex-col  2xl:w-2/3">
+    <div className="w-full max-w-4xl">
       <SingleStudentInfo />
       <ChartContainer />
       <SingleStudentTable />

@@ -19,11 +19,11 @@ function FilterControls() {
   );
 
   return (
-    <div className="mt-12 w-1/2 flex flex-col">
-      <h1 className="text-4xl flex justify-center">
+    <div className="mt-12 w-full flex flex-col">
+      <h1 className="text-4xl flex justify-center ">
         {currentStudent ? `${currentStudent}'s Dashboard` : "Student Dashboard"}
       </h1>
-      <div className="filters flex flex-row justify-center mt-2">
+      <div className="filters w-full flex flex-row justify-center mt-2">
         <button
           onClick={() => toggleDifficultyRating()}
           className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-400"

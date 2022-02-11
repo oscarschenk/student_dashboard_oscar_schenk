@@ -4,7 +4,7 @@ import StudentContainer from "../Components/StudentGrid/StudentContainer";
 
 function Home() {
   return (
-    <div className="flex flex-col  2xl:w-2/3">
+    <div className="w-full 2xl:max-w-7xl">
       <ChartContainer />
       <StudentContainer />
     </div>
