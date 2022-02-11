@@ -40,10 +40,10 @@ const BarChart = (props) => {
         />
         <VictoryGroup offset={2.3}>
           <VictoryBar
-            // animate={{
-            //   duration: 1000,
-            //   onLoad: { duration: 1500 },
-            // }}
+            animate={{
+              duration: 1000,
+              onLoad: { duration: 1500 },
+            }}
             style={{
               data: {
                 fill: difficultyRatingToggle ? "#f97317" : "#ffffff",
@@ -56,10 +56,10 @@ const BarChart = (props) => {
           />
 
           <VictoryBar
-            // animate={{
-            //   duration: 1000,
-            //   onLoad: { duration: 1500 },
-            // }}
+            animate={{
+              duration: 1000,
+              onLoad: { duration: 1500 },
+            }}
             style={{
               data: {
                 fill: funRatingToggle ? "#23c45d" : "#ffffff",
