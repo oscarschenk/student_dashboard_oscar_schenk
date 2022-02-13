@@ -30,8 +30,7 @@ function AppContextProvider(props) {
     setChartTypeToggle((prevType) => (prevType === "bar" ? "line" : "bar"));
   };
 
-  const filterToggle = (e) => {
-    const { value } = e.target;
+  const filterToggle = (value) => {
     studentNameFilterArray.includes(value)
       ? setStudentNameFilterArray((prevArray) =>
           prevArray.filter((name) => name !== value)

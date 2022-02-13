@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
+import { useParams } from "react-router-dom";
 import {
   VictoryLine,
   VictoryChart,
@@ -10,20 +11,21 @@ import {
 
 const LineChart = (props) => {
   const { difficultyRatingToggle, funRatingToggle } = useContext(AppContext);
+  const params = useParams();
   return (
     <>
       <VictoryChart
-        domainPadding={{ x: [10, 5], y: 1 }}
-        padding={{ top: 10, bottom: 50, right: 50, left: 30 }}
-        height={120}
+        domainPadding={{ x: [10, 5], y: [0, 5] }}
+        padding={{ top: 10, bottom: 50, right: 35, left: 30 }}
+        height={props.screenWidth <= 1280 ? 300 : 230}
       >
         <VictoryAxis
-          tickLabelComponent={<VictoryLabel angle={45} textAnchor="start" />}
+          tickLabelComponent={<VictoryLabel textAnchor="start" />}
           style={{
             axis: { stroke: "#756f6a" },
             axisLabel: { fontSize: 3, padding: 30 },
             ticks: { stroke: "grey", size: 5 },
-            tickLabels: { fontSize: 3, padding: 5, angle: 45 },
+            tickLabels: { fontSize: 3, padding: 2, angle: 55 },
           }}
         />
         <VictoryAxis
@@ -32,7 +34,7 @@ const LineChart = (props) => {
             axis: { stroke: "#756f6a" },
             axisLabel: { fontSize: 5, padding: 30 },
             ticks: { stroke: "grey", size: 5 },
-            tickLabels: { fontSize: 5, padding: 5 },
+            tickLabels: { fontSize: 5, padding: 3 },
           }}
           tickValues={[0, 1, 2, 3, 4, 5]}
         />

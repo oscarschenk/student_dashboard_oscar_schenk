@@ -4,7 +4,7 @@ import FilterControls from "./FilterControls";
 
 function ChartContainer(props) {
   return (
-    <div className="shadow-xl 2xl:-mx-24 mx-24  bg-white rounded flex flex-col justify-center items-center">
+    <div className="shadow-2xl  mx-0 w-full  bg-white  flex flex-col  items-center">
       <FilterControls />
       <VictoryChart />
     </div>
