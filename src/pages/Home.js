@@ -5,8 +5,8 @@ import Footer from "../Components/Footer";
 
 function Home() {
   return (
-    <div className="w-full max-h-screen min-h-screen">
-      <div className="flex flex-row">
+    <div className="w-full h-full">
+      <div className="flex h-full  flex-row">
         <StudentListContainer />
         <ChartContainer />
       </div>

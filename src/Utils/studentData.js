@@ -236,7 +236,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 5,
     funRating: 5,
   },
@@ -248,13 +248,13 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 3,
     funRating: 4,
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -326,7 +326,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -410,7 +410,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 5,
   },
@@ -470,7 +470,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 1,
     funRating: 5,
   },
@@ -482,7 +482,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 4,
     funRating: 3,
   },
@@ -500,7 +500,7 @@ const ratingData = [
   },
   {
     studentName: "Evelyn",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 5,
     funRating: 5,
   },
@@ -572,7 +572,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -584,13 +584,13 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 4,
     funRating: 3,
   },
   {
     studentName: "Aranka",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -662,7 +662,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -746,7 +746,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 1,
     funRating: 1,
   },
@@ -806,7 +806,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 4,
     funRating: 4,
   },
@@ -818,7 +818,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 2,
   },
@@ -836,7 +836,7 @@ const ratingData = [
   },
   {
     studentName: "Aranka",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -908,7 +908,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -920,13 +920,13 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 4,
     funRating: 3,
   },
   {
     studentName: "Richard",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 4,
     funRating: 4,
   },
@@ -998,7 +998,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -1082,7 +1082,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 4,
     funRating: 2,
   },
@@ -1142,7 +1142,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -1154,7 +1154,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -1172,7 +1172,7 @@ const ratingData = [
   },
   {
     studentName: "Richard",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -1244,7 +1244,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -1256,13 +1256,13 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 1,
     funRating: 3,
   },
   {
     studentName: "Hector",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -1334,7 +1334,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -1418,7 +1418,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -1478,7 +1478,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -1490,7 +1490,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -1508,7 +1508,7 @@ const ratingData = [
   },
   {
     studentName: "Hector",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -1580,7 +1580,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -1592,13 +1592,13 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 1,
     funRating: 3,
   },
   {
     studentName: "Martina",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 1,
     funRating: 4,
   },
@@ -1670,7 +1670,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -1754,7 +1754,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -1814,7 +1814,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -1826,7 +1826,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 1,
     funRating: 1,
   },
@@ -1844,7 +1844,7 @@ const ratingData = [
   },
   {
     studentName: "Martina",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 1,
     funRating: 4,
   },
@@ -1916,7 +1916,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 1,
     funRating: 1,
   },
@@ -1928,13 +1928,13 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 4,
     funRating: 1,
   },
   {
     studentName: "Maurits",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 2,
   },
@@ -2006,7 +2006,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -2090,7 +2090,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -2150,7 +2150,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -2162,7 +2162,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 4,
     funRating: 2,
   },
@@ -2180,7 +2180,7 @@ const ratingData = [
   },
   {
     studentName: "Maurits",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -2252,7 +2252,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -2264,13 +2264,13 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 2,
     funRating: 4,
   },
   {
     studentName: "Rahima",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -2342,7 +2342,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -2426,7 +2426,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -2486,7 +2486,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 1,
     funRating: 2,
   },
@@ -2498,7 +2498,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -2516,7 +2516,7 @@ const ratingData = [
   },
   {
     studentName: "Rahima",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -2588,7 +2588,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -2600,13 +2600,13 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 1,
     funRating: 3,
   },
   {
     studentName: "Sandra",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -2678,7 +2678,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -2762,7 +2762,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 1,
     funRating: 2,
   },
@@ -2822,7 +2822,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -2834,7 +2834,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -2852,7 +2852,7 @@ const ratingData = [
   },
   {
     studentName: "Sandra",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -2924,7 +2924,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -2936,13 +2936,13 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 2,
     funRating: 3,
   },
   {
     studentName: "Wietske",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -3014,7 +3014,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -3098,7 +3098,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -3158,7 +3158,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 4,
     funRating: 2,
   },
@@ -3170,7 +3170,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 4,
     funRating: 2,
   },
@@ -3188,7 +3188,7 @@ const ratingData = [
   },
   {
     studentName: "Wietske",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 1,
     funRating: 2,
   },
@@ -3260,7 +3260,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -3272,13 +3272,13 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 3,
     funRating: 2,
   },
   {
     studentName: "Oscar",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 4,
     funRating: 4,
   },
@@ -3350,7 +3350,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -3434,7 +3434,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 3,
     funRating: 2,
   },
@@ -3494,7 +3494,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -3506,7 +3506,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 1,
     funRating: 2,
   },
@@ -3524,7 +3524,7 @@ const ratingData = [
   },
   {
     studentName: "Oscar",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -3596,7 +3596,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 5,
     funRating: 5,
   },
@@ -3608,13 +3608,13 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 3,
     funRating: 4,
   },
   {
     studentName: "Aileen",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 3,
     funRating: 3,
   },
@@ -3686,7 +3686,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -3770,7 +3770,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 5,
   },
@@ -3830,7 +3830,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 1,
     funRating: 5,
   },
@@ -3842,7 +3842,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 4,
     funRating: 3,
   },
@@ -3860,7 +3860,7 @@ const ratingData = [
   },
   {
     studentName: "Aileen",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 5,
     funRating: 5,
   },
@@ -3932,7 +3932,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -3944,13 +3944,13 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 4,
     funRating: 3,
   },
   {
     studentName: "Alison",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -4022,7 +4022,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -4106,7 +4106,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 1,
     funRating: 1,
   },
@@ -4166,7 +4166,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 4,
     funRating: 4,
   },
@@ -4178,7 +4178,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 2,
   },
@@ -4196,7 +4196,7 @@ const ratingData = [
   },
   {
     studentName: "Alison",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -4268,7 +4268,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -4280,13 +4280,13 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 4,
     funRating: 3,
   },
   {
     studentName: "Peter",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 4,
     funRating: 4,
   },
@@ -4358,7 +4358,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -4442,7 +4442,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 4,
     funRating: 2,
   },
@@ -4502,7 +4502,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -4514,7 +4514,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -4532,7 +4532,7 @@ const ratingData = [
   },
   {
     studentName: "Peter",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -4604,7 +4604,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -4616,13 +4616,13 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 1,
     funRating: 3,
   },
   {
     studentName: "Philipp",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -4694,7 +4694,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 4,
     funRating: 1,
   },
@@ -4778,7 +4778,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -4838,7 +4838,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -4850,7 +4850,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 3,
     funRating: 1,
   },
@@ -4868,7 +4868,7 @@ const ratingData = [
   },
   {
     studentName: "Philipp",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -4940,7 +4940,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W1D3 - Project - Guess-the-number",
+    assignmentName: "W1D3 - Guess-the-number",
     difficultyRating: 2,
     funRating: 2,
   },
@@ -4952,13 +4952,13 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W1D4 - Project - Kleurentoggle",
+    assignmentName: "W1D4 - Kleurentoggle",
     difficultyRating: 1,
     funRating: 3,
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W1D5 - Project - Galgje",
+    assignmentName: "W1D5 - Galgje",
     difficultyRating: 1,
     funRating: 4,
   },
@@ -5030,7 +5030,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W2D5 - Project - Filmzoeker",
+    assignmentName: "W2D5 - Filmzoeker",
     difficultyRating: 2,
     funRating: 4,
   },
@@ -5114,7 +5114,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W3D5 - Project - Todo-List",
+    assignmentName: "W3D5 - Todo-List",
     difficultyRating: 2,
     funRating: 3,
   },
@@ -5174,7 +5174,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W4D3 - Project - Next-Level CSS",
+    assignmentName: "W4D3 - Next-Level CSS",
     difficultyRating: 3,
     funRating: 4,
   },
@@ -5186,7 +5186,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W5D5 - Project - Lil_Playlist",
+    assignmentName: "W5D5 - Lil_Playlist",
     difficultyRating: 1,
     funRating: 1,
   },
@@ -5204,7 +5204,7 @@ const ratingData = [
   },
   {
     studentName: "Stephanie",
-    assignmentName: "W6D2 - Project - Eindopdracht",
+    assignmentName: "Eindopdracht",
     difficultyRating: 1,
     funRating: 4,
   },

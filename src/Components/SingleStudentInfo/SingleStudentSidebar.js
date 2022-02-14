@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { Switch, Disclosure, Transition } from "@headlessui/react";
 
 function SingleStudentSidebar() {
-  const { studentData, filterToggle, studentNameFilterArray, emptyFilterList } =
+  const { studentData, studentNameFilterArray, emptyFilterList } =
     useContext(AppContext);
   const params = useParams();
   const studentAvatar = studentData.map((student) => {
