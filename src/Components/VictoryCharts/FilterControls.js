@@ -24,7 +24,7 @@ function FilterControls() {
         <h1 className="text-4xl flex justify-center ">
           {currentStudent
             ? `${currentStudent}'s Dashboard`
-            : "Student Dashboard"}
+            : "Dashboard Student Survey Results 2021"}
         </h1>
         <div className="filters w-full flex flex-row justify-center mt-2">
           <button
