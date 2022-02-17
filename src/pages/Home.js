@@ -1,12 +1,16 @@
 import React from "react";
 import ChartContainer from "../Components/VictoryCharts/ChartContainer";
-import StudentContainer from "../Components/StudentGrid/StudentContainer";
+import StudentListContainer from "../Components/StudentSidebar/StudentListContainer";
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
-    <div className="w-full 2xl:max-w-7xl">
-      <ChartContainer />
-      <StudentContainer />
+    <div className="w-full h-full">
+      <div className="flex h-full  flex-row">
+        <StudentListContainer />
+        <ChartContainer />
+      </div>
+      <Footer />
     </div>
   );
 }

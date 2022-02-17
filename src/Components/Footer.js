@@ -2,14 +2,14 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-blue-500 text-white px-36 py-8 mt-12 text-center">
+    <div className="bg-gray-700 text-white py-4 text-xs text-center md:text-md md:text-left pl-8 md:text-sm">
       <p>
         Developed as the Final Project for the Winc Academy Front-End
-        Development Course by Oscar Schenk
-      </p>
-      <p>
-        Check{" "}
-        <a href="https://www.github.com" target="_blank">
+        Development Course by Oscar Schenk | Check{" "}
+        <a
+          href="https://github.com/oscarschenk/student_dashboard_oscar_schenk"
+          target="_blank"
+        >
           GitHub
         </a>{" "}
         to see how I function

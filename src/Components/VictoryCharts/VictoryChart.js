@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../AppContext";
 import { useParams } from "react-router-dom";
-import BarChart from "./Charts/BarChart";
-import LineChart from "./Charts/LineChart";
+import BarChartRechart from "./Charts/BarChartRechart";
+import LineChartRechart from "./Charts/LineChartRechart";
 
-function VictoryBarChart(props) {
+function VictoryChart(props) {
   const { chartData, filteredChartData, chartTypeToggle } =
     useContext(AppContext);
+
+  const screenWidth = window.innerWidth;
 
   let { firstName } = useParams();
 
@@ -60,16 +62,18 @@ function VictoryBarChart(props) {
   return (
     <>
       {chartTypeToggle === "bar" ? (
-        <BarChart
+        <BarChartRechart
           data={firstName ? singleStudentPageChartFilter : dataToDisplay}
+          screenWidth={screenWidth}
         />
       ) : (
-        <LineChart
+        <LineChartRechart
           data={firstName ? singleStudentPageChartFilter : dataToDisplay}
+          screenWidth={screenWidth}
         />
       )}
     </>
   );
 }
 
-export default VictoryBarChart;
+export default VictoryChart;

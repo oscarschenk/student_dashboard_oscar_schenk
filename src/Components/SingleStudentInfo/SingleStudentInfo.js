@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../../AppContext";
 
@@ -11,16 +12,17 @@ function SingleStudentInfo() {
   const singleStudentCard = singleStudentPersonalData.map((student) => {
     return (
       <div
+        id="single-student-overview"
         key={student.id}
-        className="my-8 mx-24   flex justify-center items-center"
+        className="bg-blue-200  h-full  flex justify-center pt-8 md:pt-0 items-center flex-col shadow-2xl"
       >
-        <div>
+        <div className="w-fit px-8">
           <img
-            className="h-48 border-4 border-white shadow-2xl rounded-full"
+            className="h-fit border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
           ></img>
         </div>
-        <div className="bg-blue-500 text-white p-8 rounded-lg ml-8 shadow-2xl">
+        <div className=" py-8 mt-8 bg-blue-300 text-white px-8 text-xs  shadow-2xl">
           <p>
             Name: {student.firstName} {student.lastName}
           </p>
@@ -36,6 +38,14 @@ function SingleStudentInfo() {
               {student.email}
             </a>
           </p>
+          <p>{student.bio}</p>
+          <div className="text-white text-sm mt-4 hidden md:block">
+            <Link to="/">
+              <button className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                Back to Overview
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     );
