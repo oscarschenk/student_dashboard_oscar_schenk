@@ -9,6 +9,7 @@ function Footer() {
         <a
           href="https://github.com/oscarschenk/student_dashboard_oscar_schenk"
           target="_blank"
+          rel="noreferrer"
         >
           GitHub
         </a>{" "}

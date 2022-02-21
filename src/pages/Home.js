@@ -1,6 +1,6 @@
 import React from "react";
-import ChartContainer from "../Components/VictoryCharts/ChartContainer";
-import StudentListContainer from "../Components/StudentSidebar/StudentListContainer";
+import ChartContainer from "../Components/StudentChart/ChartContainer";
+import StudentListContainer from "../Components/StudentList/StudentListContainer";
 import Footer from "../Components/Footer";
 
 function Home() {

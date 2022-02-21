@@ -1,12 +1,12 @@
 import React from "react";
-import VictoryChart from "./VictoryChart";
+import Recharts from "./Recharts";
 import FilterControls from "./FilterControls";
 
-function ChartContainer(props) {
+function ChartContainer() {
   return (
     <div className="shadow-2xl mx-0 w-full h-full  bg-white  flex flex-col  items-center">
       <FilterControls />
-      <VictoryChart />
+      <Recharts />
     </div>
   );
 }

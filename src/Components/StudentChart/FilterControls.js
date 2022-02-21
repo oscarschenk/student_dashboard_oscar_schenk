@@ -12,8 +12,8 @@ function FilterControls() {
     chartTypeToggle,
     studentNameFilterArray,
   } = useContext(AppContext);
-  let params = useParams();
-  let currentStudent = params.firstName;
+  let { firstName } = useParams();
+  let currentStudent = firstName;
   const listOfFilteredStudentNames = studentNameFilterArray.map(
     (item) => ` ${item}`
   );

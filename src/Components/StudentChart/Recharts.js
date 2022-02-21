@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import BarChartRechart from "./Charts/BarChartRechart";
 import LineChartRechart from "./Charts/LineChartRechart";
 
-function VictoryChart(props) {
+function Recharts() {
   const { chartData, filteredChartData, chartTypeToggle } =
     useContext(AppContext);
 
@@ -76,4 +76,4 @@ function VictoryChart(props) {
   );
 }
 
-export default VictoryChart;
+export default Recharts;

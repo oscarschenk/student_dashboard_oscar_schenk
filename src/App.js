@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="bg-blue-500 h-screen font-sans">
       <Switch>
-        <Route exact path="/">
+        <Route exact path={"/"}>
           {screenWidth <= 760 ? <Redirect to="/student/Evelyn" /> : <Home />}
         </Route>
-        <Route path="/student/:firstName" component={StudentOverviewPage} />
+        <Route path={"/student/:firstName"} component={StudentOverviewPage} />
       </Switch>
     </div>
   );

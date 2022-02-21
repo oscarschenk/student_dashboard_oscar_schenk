@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import { AppContext } from "../../AppContext";
 
 function SingleStudentTable() {
-  const params = useParams();
+  const { firstName } = useParams();
   const { chartData } = useContext(AppContext);
   const singleStudentChartData = chartData.filter((student) => {
-    return student.studentName === params.firstName;
+    return student.studentName === firstName;
   });
 
   const renderTableHeader = () => {

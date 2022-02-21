@@ -1,12 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import StudentListContainer from "../Components/StudentSidebar/StudentListContainer";
-import ChartContainer from "../Components/VictoryCharts/ChartContainer";
+import StudentListContainer from "../Components/StudentList/StudentListContainer";
+import ChartContainer from "../Components/StudentChart/ChartContainer";
 import Footer from "../Components/Footer";
 import SingleStudentInfo from "../Components/SingleStudentInfo/SingleStudentInfo";
 
 function StudentOverviewPage() {
-  const params = useParams();
   return (
     <div className="w-full flex-col">
       <div className="flex h-screen md:h-screen flex-col w-full ">

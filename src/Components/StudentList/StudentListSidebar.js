@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../AppContext";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import { Switch, Disclosure, Transition } from "@headlessui/react";
 
-function StudentSidebar() {
+function StudentListSidebar() {
   const { studentData, filterToggle, studentNameFilterArray, emptyFilterList } =
     useContext(AppContext);
-  const params = useParams();
+
   const studentAvatar = studentData.map((student) => {
     return (
       <div
@@ -78,4 +77,4 @@ function StudentSidebar() {
   return studentAvatar;
 }
 
-export default StudentSidebar;
+export default StudentListSidebar;
