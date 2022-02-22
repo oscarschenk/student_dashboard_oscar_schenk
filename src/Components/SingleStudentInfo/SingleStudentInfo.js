@@ -14,7 +14,7 @@ function SingleStudentInfo() {
       <div
         id="single-student-overview"
         key={student.id}
-        className="bg-blue-200  h-full  flex justify-center pt-8 md:pt-0 items-center flex-col shadow-2xl"
+        className="bg-sky-100  h-full  flex justify-center pt-8 md:pt-0 items-center flex-col shadow-2xl"
       >
         <div className="w-fit px-8">
           <img
@@ -23,7 +23,7 @@ function SingleStudentInfo() {
             alt="student"
           ></img>
         </div>
-        <div className=" py-8 mt-8 bg-blue-300 text-white px-8 text-xs  shadow-2xl">
+        <div className=" py-8 mt-8 bg-gray-700  text-white px-8 text-xs  shadow-2xl">
           <div className="flex flex-col items-start justify-center">
             <p className="text-3xl">
               {student.firstName} {student.lastName}
@@ -33,11 +33,11 @@ function SingleStudentInfo() {
           <p className="text-base leading-tight">{student.bio}</p>
           <div className="text-white text-sm mt-4 hidden md:flex md:flex-row md:justify-start md:gap-2">
             <Link to={"/"}>
-              <button className="bg-orange-500 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+              <button className="bg-dark-sun-600 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
                 Overview
               </button>
             </Link>
-            <button className="bg-orange-500 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+            <button className="bg-dark-sun-600 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
               Call
             </button>
             <a
@@ -46,7 +46,7 @@ function SingleStudentInfo() {
               href={`mailto:${student.email}`}
               rel="noreferrer"
             >
-              <button className="bg-orange-500 px-3 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+              <button className="bg-dark-sun-600 px-3 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
                 Message
               </button>
             </a>

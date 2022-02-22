@@ -37,7 +37,7 @@ const BarChartRechart = (props) => {
           ) : (
             ""
           )}
-          {funRatingToggle ? <Bar dataKey="funRating" fill="#15BCC5" /> : ""}
+          {funRatingToggle ? <Bar dataKey="funRating" fill="#047857" /> : ""}
         </BarChart>
       </ResponsiveContainer>
     </>

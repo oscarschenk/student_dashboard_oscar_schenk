@@ -24,7 +24,7 @@ function FilterControls() {
   return (
     <div>
       <div className="mt-8 w-full flex flex-col">
-        <h1 className="text-4xl flex justify-center ">
+        <h1 className="text-4xl font-sans text-gray-800 font-bold flex justify-center ">
           {currentStudent
             ? `${currentStudent}'s Dashboard`
             : "Dashboard Student Survey Results 2021"}
@@ -32,7 +32,7 @@ function FilterControls() {
         <div className="filters w-full flex flex-row justify-center mt-2">
           <button
             onClick={() => toggleDifficultyRating()}
-            className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-600"
+            className="bg-dark-sun-600 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500"
           >
             {difficultyRatingToggle
               ? "Difficulty Rating | ON"
@@ -40,13 +40,13 @@ function FilterControls() {
           </button>
           <button
             onClick={() => toggleFunRating()}
-            className="bg-green-500 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-green-600"
+            className="bg-emerald-700 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-emerald-600"
           >
             {funRatingToggle ? "Fun Rating | ON" : "Fun Rating | OFF"}
           </button>
           <button
             onClick={() => toggleChartType()}
-            className="bg-blue-500 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-blue-600"
+            className="bg-gray-700 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-gray-600"
           >
             {chartTypeToggle === "bar"
               ? "Show Line Chart"

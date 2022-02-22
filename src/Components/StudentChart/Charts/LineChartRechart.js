@@ -37,7 +37,7 @@ const LineChartRechart = (props) => {
             <Line
               type="basis"
               dataKey="difficultyRating"
-              stroke="#f97316"
+              stroke="#FE7F2D"
               dot={false}
               strokeWidth={screenWidth <= 1024 ? 2 : 7}
             />
@@ -48,7 +48,7 @@ const LineChartRechart = (props) => {
             <Line
               type="basis"
               dataKey="funRating"
-              stroke="#28c55d"
+              stroke="#047857"
               strokeWidth={screenWidth <= 1024 ? 2 : 7}
               dot={false}
             />
