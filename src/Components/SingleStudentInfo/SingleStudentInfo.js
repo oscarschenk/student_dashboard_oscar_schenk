@@ -30,7 +30,7 @@ function SingleStudentInfo() {
             </p>
             <p className="text-xl">Age: {student.age}</p>
           </div>
-          <p className="text-base leading-tight">{student.bio}</p>
+          <p className="text-base leading-tight pt-2">{student.bio}</p>
           <div className="text-white text-sm mt-4 hidden md:flex md:flex-row md:justify-start md:gap-2">
             <Link to={"/"}>
               <button className="bg-dark-sun-600 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">

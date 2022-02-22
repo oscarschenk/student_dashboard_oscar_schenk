@@ -7,7 +7,7 @@ import StudentOverviewPage from "./pages/StudentOverviewPage";
 function App() {
   const screenWidth = window.innerWidth;
   return (
-    <div className="bg-blue-500 h-full md:h-screen font-sans">
+    <div className="bg-sky-200 h-full md:h-screen font-sans">
       <Switch>
         <Route exact path={"/"}>
           {screenWidth <= 760 ? <Redirect to="/student/Evelyn" /> : <Home />}

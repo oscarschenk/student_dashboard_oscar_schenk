@@ -25,7 +25,6 @@ function StudentListSidebar() {
                   className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
                   src={student.photo}
                   alt="Student"
-                  onClick={() => filterToggle(student.firstName)}
                 ></img>
                 <p className="text-md text-white hidden lg:block mx-4 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
               </Disclosure.Button>
