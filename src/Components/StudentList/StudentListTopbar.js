@@ -2,22 +2,20 @@ import React, { useContext } from "react";
 import { AppContext } from "../../AppContext";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { Switch, Disclosure, Transition } from "@headlessui/react";
 
-function SingleStudentSidebar() {
-  const { studentData, studentNameFilterArray, emptyFilterList } =
-    useContext(AppContext);
-  const params = useParams();
+function StudentListTopbar() {
+  const { studentData, emptyFilterList } = useContext(AppContext);
+  const { firstName } = useParams();
   const studentAvatar = studentData.map((student) => {
     return (
       <div key={student.id}>
-        <div className="w-28 ml-2 my-4 flex items-center justify-center ">
+        <div className="w-28 ml-2 mt-2 mb-4 flex items-center justify-center ">
           <Link to={`/student/${student.firstName}`} onClick={emptyFilterList}>
             <img
               className={`h-24 border-4  ${
-                student.firstName === params.firstName
-                  ? "border-green-300"
-                  : "border-orange-500"
+                student.firstName === firstName
+                  ? "border-emerald-500"
+                  : "border-dark-sun-600"
               } shadow-2xl rounded-full hover:scale-105`}
               src={student.photo}
               alt="Student"
@@ -30,4 +28,4 @@ function SingleStudentSidebar() {
   return studentAvatar;
 }
 
-export default SingleStudentSidebar;
+export default StudentListTopbar;

@@ -3,40 +3,34 @@ import { useParams } from "react-router-dom";
 import { AppContext } from "../../AppContext";
 
 function SingleStudentTable() {
-  const params = useParams();
+  const { firstName } = useParams();
   const { chartData } = useContext(AppContext);
   const singleStudentChartData = chartData.filter((student) => {
-    return student.studentName === params.firstName;
+    return student.studentName === firstName;
   });
 
-  const renderTableHeader = () => {
-    let header = Object.keys(singleStudentChartData[0]);
-    return header.map((key, index) => {
-      return (
-        <th className="p-4 text-center bg-green-500 text-white" key={index}>
-          {key.toUpperCase()}
-        </th>
-      );
-    });
-  };
-
   const singleStudentTableData = singleStudentChartData.map((item) => {
-    const { studentName, assignmentName, difficultyRating, funRating } = item;
+    const { assignmentName, difficultyRating, funRating } = item;
     return (
-      <tr key={assignmentName} className="even:bg-gray-300">
-        <td className="p-1 border-2 border-gray-200">{studentName}</td>
+      <tr key={assignmentName} className="even:bg-gray-300 w-full">
+        {/* <td className="p-1 border-2 border-gray-200">{studentName}</td> */}
         <td className="p-1 border-2 border-gray-200">{assignmentName}</td>
         <td className="p-1 border-2 border-gray-200">{difficultyRating}</td>
         <td className="p-1 border-2 border-gray-200">{funRating}</td>
       </tr>
     );
   });
+
   return (
-    <div className="rounded-lg shadow-2xl flex items-center flex-col bg-white my-12 mx-12 pb-12">
-      <h1>Table View of Rating Data</h1>
-      <table className="text-center border-2 border-gray-200 rounded-lg shadow-2xl">
-        <tbody className="rounded-lg">
-          <tr>{renderTableHeader()}</tr>
+    <div className="shadow-2xl rounded-xl text-xs flex items-center flex-col bg-white my-8 mx-4 py-8 ">
+      <h1 className="text-2xl pb-4">Table View of Rating Data</h1>
+      <table className="text-center border-2border-gray-200 shadow-2xl">
+        <tbody>
+          <tr className="text-white">
+            <th className="p-4 text-center bg-green-500">Assignment</th>
+            <th className="p-4 text-center bg-green-500">Enjoyment</th>
+            <th className="p-4 text-center bg-green-500">Difficulty</th>
+          </tr>
           {singleStudentTableData}
         </tbody>
       </table>

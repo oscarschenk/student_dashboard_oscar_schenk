@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
 import {
-  LineChart,
-  Line,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -11,13 +11,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const LineChartRechart = (props) => {
+const BarChartRechart = (props) => {
   const { difficultyRatingToggle, funRatingToggle } = useContext(AppContext);
-  const screenWidth = window.innerWidth;
   return (
     <>
       <ResponsiveContainer width="97%" height="80%">
-        <LineChart
+        <BarChart
           width={500}
           height={300}
           data={props.data}
@@ -30,35 +29,19 @@ const LineChartRechart = (props) => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="assignmentName" />
-          <YAxis type="number" domain={[0, 5]} ticks={[1, 2, 3, 4, 5]} />
+          <YAxis type="number" domain={[0, 5]} ticks={[0, 1, 2, 3, 4, 5]} />
           <Tooltip />
           <Legend />
           {difficultyRatingToggle ? (
-            <Line
-              type="basis"
-              dataKey="difficultyRating"
-              stroke="#f97316"
-              dot={false}
-              strokeWidth={screenWidth <= 1024 ? 2 : 7}
-            />
+            <Bar dataKey="difficultyRating" fill="#FE7F2D" />
           ) : (
             ""
           )}
-          {funRatingToggle ? (
-            <Line
-              type="basis"
-              dataKey="funRating"
-              stroke="#28c55d"
-              strokeWidth={screenWidth <= 1024 ? 2 : 7}
-              dot={false}
-            />
-          ) : (
-            ""
-          )}
-        </LineChart>
+          {funRatingToggle ? <Bar dataKey="funRating" fill="#047857" /> : ""}
+        </BarChart>
       </ResponsiveContainer>
     </>
   );
 };
 
-export default LineChartRechart;
+export default BarChartRechart;
