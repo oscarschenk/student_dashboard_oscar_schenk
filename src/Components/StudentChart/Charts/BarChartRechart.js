@@ -33,11 +33,11 @@ const BarChartRechart = (props) => {
           <Tooltip />
           <Legend />
           {difficultyRatingToggle ? (
-            <Bar dataKey="difficultyRating" fill="#f97316" />
+            <Bar dataKey="difficultyRating" fill="#FE7F2D" />
           ) : (
             ""
           )}
-          {funRatingToggle ? <Bar dataKey="funRating" fill="#28c55d" /> : ""}
+          {funRatingToggle ? <Bar dataKey="funRating" fill="#15BCC5" /> : ""}
         </BarChart>
       </ResponsiveContainer>
     </>

@@ -57,16 +57,29 @@ function StudentListSidebar() {
               leaveTo="transform scale-95 opacity-0"
             >
               <Disclosure.Panel className="text-white w-full text-s pt-2 mt-2 border-t">
-                <p className="hidden lg:block">{student.email}</p>
-                <p className="hidden lg:block">{student.phone}</p>
-                <Link
-                  to={`/student/${student.firstName}`}
-                  onClick={emptyFilterList}
-                >
-                  <button className="bg-orange-500  px-2 my-2   rounded shadow-lg text-white font-bold hover:bg-orange-400">
-                    Info
+                <div className="flex flex-row justify-start gap-3">
+                  <Link
+                    to={`/student/${student.firstName}`}
+                    onClick={emptyFilterList}
+                  >
+                    <button className="bg-orange-500  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                      Info
+                    </button>
+                  </Link>
+                  <button className="bg-orange-500  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                    Call
                   </button>
-                </Link>
+                  <a
+                    className="hover:underline"
+                    target="_blank"
+                    href={`mailto:${student.email}`}
+                    rel="noreferrer"
+                  >
+                    <button className="bg-orange-500  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                      Message
+                    </button>
+                  </a>
+                </div>
               </Disclosure.Panel>
             </Transition>
           </div>

@@ -12,8 +12,11 @@ function FilterControls() {
     chartTypeToggle,
     studentNameFilterArray,
   } = useContext(AppContext);
+
   let { firstName } = useParams();
   let currentStudent = firstName;
+
+  // Sort of a workaround to get a space after every student displayed
   const listOfFilteredStudentNames = studentNameFilterArray.map(
     (item) => ` ${item}`
   );
@@ -29,7 +32,7 @@ function FilterControls() {
         <div className="filters w-full flex flex-row justify-center mt-2">
           <button
             onClick={() => toggleDifficultyRating()}
-            className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-400"
+            className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-600"
           >
             {difficultyRatingToggle
               ? "Difficulty Rating | ON"
@@ -37,13 +40,13 @@ function FilterControls() {
           </button>
           <button
             onClick={() => toggleFunRating()}
-            className="bg-green-500 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-green-400"
+            className="bg-green-500 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-green-600"
           >
             {funRatingToggle ? "Fun Rating | ON" : "Fun Rating | OFF"}
           </button>
           <button
             onClick={() => toggleChartType()}
-            className="bg-blue-400 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-red-400"
+            className="bg-blue-500 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-blue-600"
           >
             {chartTypeToggle === "bar"
               ? "Show Line Chart"

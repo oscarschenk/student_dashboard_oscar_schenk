@@ -24,29 +24,32 @@ function SingleStudentInfo() {
           ></img>
         </div>
         <div className=" py-8 mt-8 bg-blue-300 text-white px-8 text-xs  shadow-2xl">
-          <p>
-            Name: {student.firstName} {student.lastName}
-          </p>
-          <p>Age: {student.age}</p>
-          <p>Phone: {student.phone}</p>
-          <p>
-            E-mail:{" "}
+          <div className="flex flex-col items-start justify-center">
+            <p className="text-3xl">
+              {student.firstName} {student.lastName}
+            </p>
+            <p className="text-xl">Age: {student.age}</p>
+          </div>
+          <p className="text-base leading-tight">{student.bio}</p>
+          <div className="text-white text-sm mt-4 hidden md:flex md:flex-row md:justify-start md:gap-2">
+            <Link to={"/"}>
+              <button className="bg-orange-500 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                Overview
+              </button>
+            </Link>
+            <button className="bg-orange-500 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+              Call
+            </button>
             <a
               className="hover:underline"
               target="_blank"
               href={`mailto:${student.email}`}
               rel="noreferrer"
             >
-              {student.email}
-            </a>
-          </p>
-          <p>{student.bio}</p>
-          <div className="text-white text-sm mt-4 hidden md:block">
-            <Link to={"/"}>
-              <button className="bg-orange-500 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-orange-400">
-                Back to Overview
+              <button className="bg-orange-500 px-3 py-1 rounded shadow-lg text-white font-bold hover:bg-orange-400">
+                Message
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
