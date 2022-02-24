@@ -14,26 +14,26 @@ function SingleStudentInfo() {
       <div
         id="single-student-overview"
         key={student.id}
-        className="bg-sky-100  h-full  flex justify-center pt-8 md:pt-0 items-center flex-col shadow-2xl"
+        className="bg-sky-100 h-full flex flex-col justify-center items-center shadow-2xl md:px-8 md:py-4 lg:px-0 lg:py-0 lg:pt-0 lg:flex-col md:flex-row "
       >
-        <div className="w-fit px-8">
+        <div className="w-2/3 py-8 md:w-1/2 lg:pt-12 lg:w-full lg:px-8">
           <img
-            className="h-fit border-4 border-white shadow-2xl rounded-2xl"
+            className="border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
             alt="student"
           ></img>
         </div>
-        <div className=" py-8 mt-8 bg-gray-700  text-white px-8 text-xs  shadow-2xl">
+        <div className=" py-8 lg:-mt-4 md:rounded-lg lg:rounded-none w-full md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  bg-gray-700  text-white px-8 text-xs h-fit  shadow-2xl">
           <div className="flex flex-col items-start justify-center">
-            <p className="text-3xl">
+            <p className="text-xl lg:text-3xl">
               {student.firstName} {student.lastName}
             </p>
             <p className="text-xl">Age: {student.age}</p>
           </div>
-          <p className="text-base leading-tight pt-2">{student.bio}</p>
-          <div className="text-white text-sm mt-4 hidden md:flex md:flex-row md:justify-start md:gap-2">
+          <p className="text-xs lg:text-md leading-tight pt-2">{student.bio}</p>
+          <div className="text-white text-sm mt-4 flex flex-row justify-start gap-2">
             <Link to={"/"}>
-              <button className="bg-dark-sun-600 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+              <button className="bg-dark-sun-600 px-2 py-1 hidden md:block rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
                 Overview
               </button>
             </Link>
@@ -46,7 +46,7 @@ function SingleStudentInfo() {
               href={`mailto:${student.email}`}
               rel="noreferrer"
             >
-              <button className="bg-dark-sun-600 px-3 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+              <button className="bg-dark-sun-600 px-2 py-1 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
                 Message
               </button>
             </a>

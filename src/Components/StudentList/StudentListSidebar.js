@@ -14,19 +14,19 @@ function StudentListSidebar() {
 
     return (
       <div
-        className="py-1 border-t-2 border-gray-600 pl-4 pr-8 items-center bg-gray-700 hover:bg-gray-800"
+        className="py-1 border-t-2 border-gray-600 pl-4 pr-8 items-center bg-gray-700 hover:bg-gray-800 d"
         key={student.id}
       >
         <Disclosure>
           <div className="flex flex-col">
             <div className="flex flex-row justify-center items-center">
-              <Disclosure.Button className="py-2 text-white flex w-36 lg:w-fit flex-row justify-center items-center  ">
+              <Disclosure.Button className="py-2 text-white flex w-36 lg:w-fit flex-row justify-center items-center">
                 <img
                   className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
                   src={student.photo}
                   alt="Student"
                 ></img>
-                <p className="text-md text-white hidden lg:block mx-4 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
+                <p className="text-md  hidden lg:block mx-4 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
               </Disclosure.Button>
 
               <div className="ml-2">
@@ -60,7 +60,7 @@ function StudentListSidebar() {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <Disclosure.Panel className="text-white w-full text-s pt-2 mt-2 border-t">
+              <Disclosure.Panel className="text-white w-full text-s pt-2 mt-2 border-t border-gray-200">
                 <div className="flex flex-col lg:flex-row justify-start gap-3">
                   <Link
                     to={`/student/${student.firstName}`}

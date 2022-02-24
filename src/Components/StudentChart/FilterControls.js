@@ -23,8 +23,8 @@ function FilterControls() {
 
   return (
     <div>
-      <div className="mt-8 w-full flex flex-col">
-        <h1 className="text-4xl font-sans text-gray-800 font-bold flex justify-center ">
+      <div className="mt-8 mb-4 w-full flex flex-col">
+        <h1 className="lg:text-4xl md:text-2xl font-sans text-gray-800 font-bold flex justify-center">
           {currentStudent
             ? `${currentStudent}'s Dashboard`
             : "Dashboard Student Survey Results 2021"}

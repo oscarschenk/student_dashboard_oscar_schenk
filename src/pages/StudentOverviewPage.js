@@ -7,14 +7,16 @@ import SingleStudentTable from "../Components/SingleStudentInfo/SingleStudentTab
 
 function StudentOverviewPage() {
   return (
-    <div className="w-full flex-col">
-      <div className="flex h-full md:h-screen flex-col w-full ">
-        <StudentListContainer />
-        <div className="flex  flex-col flex-grow sm:w-full md:flex-row">
-          <div className="md:w-3/12 w-full h-full">
+    <div className="w-full lg:h-screen h-full">
+      <div className="flex h-full flex-col">
+        <div className="h-fit">
+          <StudentListContainer />
+        </div>
+        <div className="flex h-full flex-col lg:flex-row">
+          <div className=" w-full lg:w-3/12">
             <SingleStudentInfo />
           </div>
-          <div className="hidden md:block w-9/12">
+          <div className="hidden md:block w-full h-full lg:w-9/12">
             <ChartContainer />
           </div>
           <div className="block md:hidden">

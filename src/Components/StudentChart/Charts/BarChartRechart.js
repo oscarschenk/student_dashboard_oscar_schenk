@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
+import { useParams } from "react-router-dom";
 import {
   BarChart,
   Bar,
@@ -12,18 +13,21 @@ import {
 } from "recharts";
 
 const BarChartRechart = (props) => {
-  const { difficultyRatingToggle, funRatingToggle } = useContext(AppContext);
+  const { difficultyRatingToggle, funRatingToggle, screenSize } =
+    useContext(AppContext);
+  const params = useParams();
   return (
     <>
-      <ResponsiveContainer width="97%" height="80%">
+      <ResponsiveContainer
+        width="95%"
+        height={screenSize < 1024 ? 400 : !params.firstName ? "100%" : 400}
+      >
         <BarChart
-          width={500}
-          height={300}
           data={props.data}
           margin={{
             top: 5,
-            right: 30,
-            left: -35,
+            right: 70,
+            left: 0,
             bottom: 20,
           }}
         >

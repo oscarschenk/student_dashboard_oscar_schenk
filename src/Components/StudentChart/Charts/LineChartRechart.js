@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useParams } from "react-router-dom";
 import { AppContext } from "../../../AppContext";
 import {
   LineChart,
@@ -12,19 +13,24 @@ import {
 } from "recharts";
 
 const LineChartRechart = (props) => {
-  const { difficultyRatingToggle, funRatingToggle } = useContext(AppContext);
-  const screenWidth = window.innerWidth;
+  const { difficultyRatingToggle, funRatingToggle, screenSize } =
+    useContext(AppContext);
+  let params = useParams();
+
   return (
     <>
-      <ResponsiveContainer width="97%" height="80%">
+      <ResponsiveContainer
+        width="95%"
+        height={screenSize < 1024 ? 400 : !params.firstName ? "100%" : 400}
+      >
         <LineChart
           width={500}
           height={300}
           data={props.data}
           margin={{
             top: 5,
-            right: 30,
-            left: -35,
+            right: 70,
+            left: 0,
             bottom: 20,
           }}
         >
@@ -39,7 +45,7 @@ const LineChartRechart = (props) => {
               dataKey="difficultyRating"
               stroke="#FE7F2D"
               dot={false}
-              strokeWidth={screenWidth <= 1024 ? 2 : 7}
+              strokeWidth={screenSize <= 1024 ? 2 : 7}
             />
           ) : (
             ""
@@ -49,7 +55,7 @@ const LineChartRechart = (props) => {
               type="basis"
               dataKey="funRating"
               stroke="#047857"
-              strokeWidth={screenWidth <= 1024 ? 2 : 7}
+              strokeWidth={screenSize <= 1024 ? 2 : 7}
               dot={false}
             />
           ) : (

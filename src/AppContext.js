@@ -4,6 +4,7 @@ import { ratingData, personalData } from "./Utils/studentData";
 const AppContext = React.createContext();
 
 function AppContextProvider(props) {
+  const [theme, setTheme] = useState("");
   const [chartData, setChartData] = useState(ratingData);
   const [filteredChartData, setFilteredChartData] = useState([]);
   const [studentData, setStudentData] = useState(personalData);
@@ -11,6 +12,11 @@ function AppContextProvider(props) {
   const [funRatingToggle, setFunRatingToggle] = useState(true);
   const [chartTypeToggle, setChartTypeToggle] = useState("bar");
   const [studentNameFilterArray, setStudentNameFilterArray] = useState([]);
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "" : "dark"));
+  };
 
   const toggleDifficultyRating = () => {
     if (difficultyRatingToggle === true && funRatingToggle === false) {
@@ -60,6 +66,8 @@ function AppContextProvider(props) {
   return (
     <AppContext.Provider
       value={{
+        theme,
+        toggleTheme,
         chartData,
         setChartData,
         filteredChartData,
@@ -77,6 +85,7 @@ function AppContextProvider(props) {
         toggleFunRating,
         filterToggle,
         emptyFilterList,
+        screenSize,
       }}
     >
       {props.children}

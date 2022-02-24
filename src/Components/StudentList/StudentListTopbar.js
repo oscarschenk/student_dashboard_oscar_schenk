@@ -9,7 +9,7 @@ function StudentListTopbar() {
   const studentAvatar = studentData.map((student) => {
     return (
       <div key={student.id}>
-        <div className="w-28 ml-2 mt-2 mb-4 flex items-center justify-center ">
+        <div className="w-28 flex items-center justify-center ">
           <Link to={`/student/${student.firstName}`} onClick={emptyFilterList}>
             <img
               className={`h-24 border-4  ${
