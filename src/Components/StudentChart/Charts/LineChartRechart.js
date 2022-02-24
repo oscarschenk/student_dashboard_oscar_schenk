@@ -15,13 +15,13 @@ import {
 const LineChartRechart = (props) => {
   const { difficultyRatingToggle, funRatingToggle, screenSize } =
     useContext(AppContext);
-  let params = useParams();
+  let { firstName } = useParams();
 
   return (
     <>
       <ResponsiveContainer
         width="95%"
-        height={screenSize < 1024 ? 400 : !params.firstName ? "100%" : 400}
+        height={screenSize < 1024 && firstName ? 400 : "100%"}
       >
         <LineChart
           width={500}

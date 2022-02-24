@@ -15,12 +15,14 @@ import {
 const BarChartRechart = (props) => {
   const { difficultyRatingToggle, funRatingToggle, screenSize } =
     useContext(AppContext);
-  const params = useParams();
+  const { firstName } = useParams();
+  console.log(firstName);
+  console.log(screenSize);
   return (
     <>
       <ResponsiveContainer
         width="95%"
-        height={screenSize < 1024 ? 400 : !params.firstName ? "100%" : 400}
+        height={screenSize < 1024 && firstName ? 400 : "100%"}
       >
         <BarChart
           data={props.data}

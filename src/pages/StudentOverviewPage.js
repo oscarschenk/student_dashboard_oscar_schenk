@@ -16,7 +16,7 @@ function StudentOverviewPage() {
           <div className=" w-full lg:w-3/12">
             <SingleStudentInfo />
           </div>
-          <div className="hidden md:block w-full h-full lg:w-9/12">
+          <div className="hidden md:block lg:w-9/12">
             <ChartContainer />
           </div>
           <div className="block md:hidden">

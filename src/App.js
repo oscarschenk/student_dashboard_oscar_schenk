@@ -8,7 +8,7 @@ import StudentOverviewPage from "./pages/StudentOverviewPage";
 function App() {
   const { theme, screenSize } = useContext(AppContext);
   return (
-    <div className={`${theme} bg-sky-200 h-full lg:h-screen font-sans`}>
+    <div className={`${theme} bg-sky-200 h-screen font-sans`}>
       <Switch>
         <Route exact path={"/"}>
           {screenSize <= 767 ? <Redirect to="/student/Evelyn" /> : <Home />}
