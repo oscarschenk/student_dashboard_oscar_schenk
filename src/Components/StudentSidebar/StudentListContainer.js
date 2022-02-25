@@ -9,9 +9,9 @@ function StudentListContainer() {
     <div
       className={`flex ${
         firstName
-          ? "flex-row pb-4 pt-2 overflow-x-scroll overflow-y-hidden"
-          : "flex-col overflow-y-scroll "
-      } scrollbar-thin scrollbar-track-gray-700 scrollbar-thumb-sky-200 bg-gray-700 shadow-md`}
+          ? "flex-row pb-4 pt-2 overflow-x-scroll overflow-y-hidden bg-gradient-to-b from-gray-800 to-gray-700"
+          : "flex-col overflow-y-scroll bg-gradient-to-b from-gray-800 to-gray-700"
+      } scrollbar-thin scrollbar-track-gray-700 scrollbar-thumb-sky-200  shadow-md`}
     >
       {firstName ? <StudentListTopbar /> : <StudentListSidebar />}
     </div>

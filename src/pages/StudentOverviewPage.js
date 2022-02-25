@@ -1,5 +1,5 @@
 import React from "react";
-import StudentListContainer from "../Components/StudentList/StudentListContainer";
+import StudentListContainer from "../Components/StudentSidebar/StudentListContainer";
 import ChartContainer from "../Components/StudentChart/ChartContainer";
 import Footer from "../Components/Footer";
 import SingleStudentInfo from "../Components/SingleStudentInfo/SingleStudentInfo";

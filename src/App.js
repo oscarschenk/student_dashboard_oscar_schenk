@@ -11,7 +11,7 @@ function App() {
     <div className={`${theme} bg-sky-100 lg:h-screen h-auto font-sans`}>
       <Switch>
         <Route exact path={"/"}>
-          {screenSize < 768 ? <Redirect to="/student/Evelyn" /> : <Home />}
+          {screenSize < 1024 ? <Redirect to="/student/Evelyn" /> : <Home />}
         </Route>
         <Route path={"/student/:firstName"} component={StudentOverviewPage} />
       </Switch>

@@ -16,14 +16,14 @@ function SingleStudentInfo() {
         key={student.id}
         className="bg-sky-100  h-full flex flex-col justify-center items-center shadow-2xl lg:w-full  lg:px-0 lg:py-0 lg:pt-0 lg:flex-col md:flex-row md:px-8 md:py-10"
       >
-        <div className="w-2/3 min-h-72 py-8 md:flex md:items-center md:justify-center md:w-1/3 md:h-72 lg:pt-12 lg:w-full lg:px-8">
+        <div className="w-2/3 min-h-72 py-8 md:flex md:items-center md:justify-center md:w-1/3 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:px-8">
           <img
             className="border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
             alt="student"
           ></img>
         </div>
-        <div className=" py-8  bg-gray-700  text-white px-8 text-xs h-fit  shadow-2xl lg:-mt-4 md:rounded-lg lg:rounded-none md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  ">
+        <div className=" py-8 bg-gradient-to-b from-gray-700 to-gray-600  text-white px-8 text-xs h-fit  shadow-2xl lg:-mt-4 md:rounded-lg lg:rounded-none md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  ">
           <div className="flex flex-col items-start justify-center">
             <p className="text-xl lg:text-3xl">
               {student.firstName} {student.lastName}
@@ -33,7 +33,7 @@ function SingleStudentInfo() {
           <p className="text-xs lg:text-md leading-tight pt-2">{student.bio}</p>
           <div className="text-white text-sm mt-4 flex flex-row justify-start gap-2">
             <Link to={"/"}>
-              <button className="bg-dark-sun-600 px-2 py-1 hidden md:block rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+              <button className="bg-dark-sun-600 px-2 py-1 hidden lg:block rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
                 Overview
               </button>
             </Link>
