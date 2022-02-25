@@ -49,8 +49,8 @@ function FilterControls() {
             className="bg-gray-700 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-gray-600"
           >
             {chartTypeToggle === "bar"
-              ? "Show Line Chart"
-              : "Back To Bar Chart"}
+              ? "Back to Line Chart"
+              : "Show Bar Chart"}
           </button>
         </div>
         <div className="mt-2 flex justify-center text-center">

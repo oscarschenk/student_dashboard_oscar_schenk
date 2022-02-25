@@ -21,7 +21,7 @@ function AppContextProvider(props) {
   const [studentData, setStudentData] = useState(personalData);
   const [difficultyRatingToggle, setDifficultyRatingToggle] = useState(true);
   const [funRatingToggle, setFunRatingToggle] = useState(true);
-  const [chartTypeToggle, setChartTypeToggle] = useState("bar");
+  const [chartTypeToggle, setChartTypeToggle] = useState("line");
   const [studentNameFilterArray, setStudentNameFilterArray] = useState([]);
   const [screenSize, setScreenSize] = useState();
 
