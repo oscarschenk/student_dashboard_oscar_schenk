@@ -21,7 +21,6 @@ const BarChartRechart = (props) => {
     <>
       <ResponsiveContainer
         minHeight={700}
-        minWidth={700}
         width="95%"
         height={screenSize < 1024 && firstName ? 700 : "100%"}
       >
