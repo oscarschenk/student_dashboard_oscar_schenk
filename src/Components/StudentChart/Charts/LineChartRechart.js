@@ -20,8 +20,10 @@ const LineChartRechart = (props) => {
   return (
     <>
       <ResponsiveContainer
+        minHeight={700}
+        minWidth={700}
         width="95%"
-        height={screenSize < 1024 && firstName ? 400 : "100%"}
+        height={screenSize < 1024 && firstName ? 700 : "100%"}
       >
         <LineChart
           width={500}

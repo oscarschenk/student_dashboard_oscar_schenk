@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ratingData, personalData } from "./Utils/studentData";
 
 const AppContext = React.createContext();
+
+function debounce(fn, ms) {
+  let timer;
+  return (_) => {
+    clearTimeout(timer);
+    timer = setTimeout((_) => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
 
 function AppContextProvider(props) {
   const [theme, setTheme] = useState("");
@@ -12,7 +23,17 @@ function AppContextProvider(props) {
   const [funRatingToggle, setFunRatingToggle] = useState(true);
   const [chartTypeToggle, setChartTypeToggle] = useState("bar");
   const [studentNameFilterArray, setStudentNameFilterArray] = useState([]);
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const [screenSize, setScreenSize] = useState();
+
+  useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setScreenSize(window.innerWidth);
+    }, 100);
+    window.addEventListener("resize", debouncedHandleResize);
+    return (_) => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  });
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "" : "dark"));

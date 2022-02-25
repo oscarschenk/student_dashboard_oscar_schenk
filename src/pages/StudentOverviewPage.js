@@ -7,8 +7,8 @@ import SingleStudentTable from "../Components/SingleStudentInfo/SingleStudentTab
 
 function StudentOverviewPage() {
   return (
-    <div className="w-full lg:h-screen h-full">
-      <div className="flex md:h-full h-fit flex-col">
+    <div className="w-full lg:h-screen h-full min-h-screen">
+      <div className="flex min-h-screen h-fit flex-col md:h-full">
         <div className="h-fit">
           <StudentListContainer />
         </div>
@@ -24,7 +24,9 @@ function StudentOverviewPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
