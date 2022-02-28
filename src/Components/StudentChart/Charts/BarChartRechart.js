@@ -13,10 +13,11 @@ import {
 } from "recharts";
 
 const BarChartRechart = (props) => {
-  const { difficultyRatingToggle, funRatingToggle, screenSize } =
+  const { difficultyRatingToggle, theme, funRatingToggle, screenSize } =
     useContext(AppContext);
-  const { firstName } = useParams();
-
+  let { firstName } = useParams();
+  let funBarColor = theme === "dark" ? "#eab308" : "#047857";
+  let difficultyBarColor = theme === "dark" ? "#0284c7" : "#FE7F2D";
   return (
     <>
       <ResponsiveContainer
@@ -40,11 +41,15 @@ const BarChartRechart = (props) => {
           <Tooltip />
           <Legend />
           {difficultyRatingToggle ? (
-            <Bar dataKey="difficultyRating" fill="#FE7F2D" />
+            <Bar dataKey="difficultyRating" fill={difficultyBarColor} />
           ) : (
             ""
           )}
-          {funRatingToggle ? <Bar dataKey="funRating" fill="#047857" /> : ""}
+          {funRatingToggle ? (
+            <Bar dataKey="funRating" fill={funBarColor} />
+          ) : (
+            ""
+          )}
         </BarChart>
       </ResponsiveContainer>
     </>

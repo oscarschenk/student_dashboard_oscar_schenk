@@ -14,8 +14,8 @@ function StudentListTopbar() {
             <img
               className={`h-24 border-4  ${
                 student.firstName === firstName
-                  ? "border-emerald-500"
-                  : "border-dark-sun-600"
+                  ? "border-emerald-500 dark:border-yellow-500"
+                  : "border-dark-sun-600 dark:border-sky-600"
               } shadow-2xl rounded-full hover:scale-105`}
               src={student.photo}
               alt="Student"

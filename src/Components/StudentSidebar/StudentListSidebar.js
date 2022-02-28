@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 import { Switch, Disclosure, Transition } from "@headlessui/react";
 
 function StudentListSidebar() {
-  const { studentData, filterToggle, studentNameFilterArray, emptyFilterList } =
-    useContext(AppContext);
+  const {
+    studentData,
+    filterToggle,
+    theme,
+    studentNameFilterArray,
+    emptyFilterList,
+  } = useContext(AppContext);
 
   const studentAvatar = studentData.map((student) => {
     const imgBorderColor = studentNameFilterArray.includes(student.firstName)
-      ? "border-emerald-600"
-      : "border-dark-sun-600";
+      ? "border-emerald-600 dark:border-yellow-500"
+      : "border-dark-sun-600 dark:border-sky-600";
 
     return (
       <div
@@ -18,26 +23,28 @@ function StudentListSidebar() {
         key={student.id}
       >
         <Disclosure>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full px-8">
             <div className="flex flex-row justify-center items-center">
-              <Disclosure.Button className="py-2 text-white flex w-36 lg:w-fit flex-row justify-center items-center">
-                <img
-                  className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
-                  src={student.photo}
-                  alt="Student"
-                ></img>
-                <p className="text-md  hidden lg:block mx-4 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
+              <Disclosure.Button className="py-2 text-white flex w-screen lg:w-fit flex-row justify-center items-center">
+                <div className="w-20">
+                  <img
+                    className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
+                    src={student.photo}
+                    alt="Student"
+                  ></img>
+                </div>
+                <p className="text-md  hidden lg:block mx-2 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
               </Disclosure.Button>
 
-              <div className="ml-2">
+              <div>
                 <Switch
                   checked={studentNameFilterArray.includes(student.firstName)}
                   onChange={() => filterToggle(student.firstName)}
                   className={`${
                     studentNameFilterArray.includes(student.firstName)
-                      ? "bg-emerald-700"
-                      : "bg-dark-sun-600"
-                  }
+                      ? "bg-emerald-700 dark:bg-yellow-500"
+                      : "bg-dark-sun-600 dark:bg-sky-600"
+                  } 
           relative inline-flex flex-shrink-0 h-[24px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                 >
                   <span
@@ -66,11 +73,11 @@ function StudentListSidebar() {
                     to={`/student/${student.firstName}`}
                     onClick={emptyFilterList}
                   >
-                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                       Info
                     </button>
                   </Link>
-                  <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+                  <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                     Call
                   </button>
                   <a
@@ -79,7 +86,7 @@ function StudentListSidebar() {
                     href={`mailto:${student.email}`}
                     rel="noreferrer"
                   >
-                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500">
+                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                       Message
                     </button>
                   </a>

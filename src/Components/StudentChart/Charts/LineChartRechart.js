@@ -13,9 +13,11 @@ import {
 } from "recharts";
 
 const LineChartRechart = (props) => {
-  const { difficultyRatingToggle, funRatingToggle, screenSize } =
+  const { difficultyRatingToggle, theme, funRatingToggle, screenSize } =
     useContext(AppContext);
   let { firstName } = useParams();
+  let funBarColor = theme === "dark" ? "#0284c7" : "#FE7F2D";
+  let difficultyBarColor = theme === "dark" ? "#facc15" : "#047857";
 
   return (
     <>
@@ -26,8 +28,6 @@ const LineChartRechart = (props) => {
         height={screenSize < 1024 && firstName ? 500 : "100%"}
       >
         <LineChart
-          width={500}
-          height={300}
           data={props.data}
           margin={{
             top: 5,
@@ -45,9 +45,9 @@ const LineChartRechart = (props) => {
             <Line
               type="basis"
               dataKey="difficultyRating"
-              stroke="#FE7F2D"
+              stroke={funBarColor}
               dot={false}
-              strokeWidth={screenSize <= 1024 ? 2 : 7}
+              strokeWidth={screenSize <= 1024 ? 2 : 5}
             />
           ) : (
             ""
@@ -56,8 +56,8 @@ const LineChartRechart = (props) => {
             <Line
               type="basis"
               dataKey="funRating"
-              stroke="#047857"
-              strokeWidth={screenSize <= 1024 ? 2 : 7}
+              stroke={difficultyBarColor}
+              strokeWidth={screenSize <= 1024 ? 2 : 5}
               dot={false}
             />
           ) : (

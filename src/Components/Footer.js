@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-teal-900 text-white py-4 px-8 text-xs text-center md:px-0 md:text-md md:text-left lg:text-left md:pl-8 md:text-sm">
+    <div className="bg-teal-900 dark:bg-gray-700 text-white py-4 px-8 text-xs text-center md:px-0 md:text-md md:text-center  md:pl-8 lg:text-lg lg:text-left">
       <p>
         Developed as the Final Project for the Winc Academy Front-End
         Development Course by Oscar Schenk | Check{" "}

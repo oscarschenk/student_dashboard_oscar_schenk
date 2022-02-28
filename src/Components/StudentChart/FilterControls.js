@@ -32,7 +32,7 @@ function FilterControls() {
         <div className="filters w-full flex flex-row justify-center mt-2">
           <button
             onClick={() => toggleDifficultyRating()}
-            className="bg-dark-sun-600 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500"
+            className="bg-dark-sun-600 px-3 py-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500"
           >
             {difficultyRatingToggle
               ? "Difficulty Rating | ON"
@@ -40,7 +40,7 @@ function FilterControls() {
           </button>
           <button
             onClick={() => toggleFunRating()}
-            className="bg-emerald-700 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-emerald-600"
+            className="bg-emerald-700 px-3 py-2 rounded shadow-lg text-white ml-2 font-bold hover:bg-emerald-600 dark:bg-yellow-500 dark:hover:bg-yellow-400"
           >
             {funRatingToggle ? "Fun Rating | ON" : "Fun Rating | OFF"}
           </button>

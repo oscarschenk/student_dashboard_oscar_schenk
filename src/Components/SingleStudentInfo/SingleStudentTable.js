@@ -27,9 +27,15 @@ function SingleStudentTable() {
       <table className="text-center border-2border-gray-200 shadow-2xl">
         <tbody>
           <tr className="text-white">
-            <th className="p-4 text-center bg-green-500">Assignment</th>
-            <th className="p-4 text-center bg-green-500">Enjoyment</th>
-            <th className="p-4 text-center bg-green-500">Difficulty</th>
+            <th className="p-4 text-center bg-emerald-700 dark:bg-sky-600">
+              Assignment
+            </th>
+            <th className="p-4 text-center bg-emerald-700 dark:bg-sky-600">
+              Enjoyment
+            </th>
+            <th className="p-4 text-center bg-emerald-700 dark:bg-sky-600">
+              Difficulty
+            </th>
           </tr>
           {singleStudentTableData}
         </tbody>

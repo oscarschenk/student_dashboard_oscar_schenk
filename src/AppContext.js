@@ -24,6 +24,7 @@ function AppContextProvider(props) {
   const [chartTypeToggle, setChartTypeToggle] = useState("line");
   const [studentNameFilterArray, setStudentNameFilterArray] = useState([]);
   const [screenSize, setScreenSize] = useState();
+  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
@@ -107,6 +108,8 @@ function AppContextProvider(props) {
         filterToggle,
         emptyFilterList,
         screenSize,
+        isOpen,
+        setIsOpen,
       }}
     >
       {props.children}
