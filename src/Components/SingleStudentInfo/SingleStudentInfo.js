@@ -16,7 +16,7 @@ function SingleStudentInfo() {
         key={student.id}
         className="bg-sky-100 h-full flex flex-col justify-center items-center shadow-2xl lg:w-full  lg:px-0 lg:py-0 lg:pt-0 lg:flex-col md:flex-row md:px-8 md:py-10 dark:bg-gray-100"
       >
-        <div className="min-h-72 w-2/3 mb-4 h-80 py-8 md:flex items-center justify-center md:w-1/3 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:mb-8 lg:px-8">
+        <div className="min-h-72 w-2/3 mb-4 h-80 py-8 md:flex items-center justify-center md:w-1/3 md:mb-0 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:mb-8 lg:px-8">
           <img
             className="border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
