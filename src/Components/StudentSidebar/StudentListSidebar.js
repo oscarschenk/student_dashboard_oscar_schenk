@@ -19,11 +19,11 @@ function StudentListSidebar() {
 
     return (
       <div
-        className="py-1 border-t-2 border-gray-600 pl-4 pr-8 items-center bg-gradient-to-r from-gray-800 to-gray-700 hover:bg-gray-800 d"
+        className="py-1 border-t-2 border-gray-600 w-full items-center bg-gradient-to-r from-gray-800 to-gray-700 hover:bg-gray-800 d"
         key={student.id}
       >
         <Disclosure>
-          <div className="flex flex-col w-full px-8">
+          <div className="flex flex-col xl:pl-8 xl:pr-12 lg:pl-12 lg:pr-16">
             <div className="flex flex-row justify-center items-center">
               <Disclosure.Button className="py-2 text-white flex w-screen lg:w-fit flex-row justify-center items-center">
                 <div className="w-20">

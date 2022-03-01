@@ -24,7 +24,11 @@ function FilterControls() {
   return (
     <div>
       <div className="mt-8 mb-4 w-full flex flex-col">
-        <h1 className="lg:text-4xl font-sans text-gray-800 font-bold flex justify-center">
+        <h1
+          className={`lg:text-4xl font-sans text-gray-800 font-bold flex justify-center ${
+            currentStudent ? "text-2xl" : ""
+          }`}
+        >
           {currentStudent
             ? `${currentStudent}'s Dashboard`
             : "Dashboard Student Survey Results 2021"}

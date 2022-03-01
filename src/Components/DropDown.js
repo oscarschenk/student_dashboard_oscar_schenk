@@ -1,4 +1,5 @@
 import React, { useContext, Fragment } from "react";
+import { useParams } from "react-router-dom";
 import { AppContext } from "../AppContext";
 import { Popover, Transition, Switch } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -27,8 +28,9 @@ const solutions = [
   },
 ];
 
-export default function Example() {
+export default function DropDown() {
   const { theme, toggleTheme } = useContext(AppContext);
+  const { firstName } = useParams();
   return (
     <div className="w-full lg:max-w-sm pl-8 px-4 z-20">
       <Popover className="relative flex flex-col h-32 items-end">
@@ -55,10 +57,10 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className=" z-20 bg-white relative shadow-2xl  px-4 mt-3 h-screen sm:px-0 lg:max-w-3xl">
+              <Popover.Panel className=" z-20 bg-white relative rounded-lg shadow-2xl  px-4 mt-3 h-screen sm:px-0 lg:max-w-3xl">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="flex flex-row rounded-t-lg bg-gray-700 py-3 justify-center gap-3 text-white">
-                    <p className="font-bold">Slava Ukraini</p>
+                    <p className="font-bold">Switch Theme</p>
                     <Switch
                       checked={theme === "dark"}
                       onChange={toggleTheme}
@@ -111,7 +113,7 @@ export default function Example() {
                         </span>
                       </span>
                       <span className="block text-sm text-white">
-                        Check GitHub to see how I function
+                        Check GitHub to take a look at the code
                       </span>
                     </a>
                   </div>

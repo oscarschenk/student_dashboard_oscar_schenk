@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <AppContextProvider>
-    <Router basename={"/react-student-dashboard"}>
+    <Router basename={"/"}>
       <App />
     </Router>
   </AppContextProvider>,

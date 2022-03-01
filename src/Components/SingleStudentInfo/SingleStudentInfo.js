@@ -21,7 +21,7 @@ function SingleStudentInfo() {
             className="border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
             alt="student"
-          ></img>
+          />
         </div>
         <div className=" py-8 bg-gradient-to-b from-gray-700 to-gray-600  text-white px-8 text-xs h-fit  shadow-2xl lg:-mt-4 md:rounded-lg lg:rounded-none md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  ">
           <div className="flex flex-col items-start justify-center">

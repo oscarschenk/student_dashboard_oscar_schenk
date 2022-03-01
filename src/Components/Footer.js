@@ -13,7 +13,7 @@ function Footer() {
         >
           GitHub
         </a>{" "}
-        to see how I function
+        to take a look at the code
       </p>
     </div>
   );

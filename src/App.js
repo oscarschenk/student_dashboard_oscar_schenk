@@ -20,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+// This app is created with ReactJS, Tailwind CSS, Recharts and React Router. State is managed using Context. I want to focus on learning Test Driven Development, TypeScript, Vue.js, UX Design, Python and anything else I come across that can help me further develop myself as a programmer.
