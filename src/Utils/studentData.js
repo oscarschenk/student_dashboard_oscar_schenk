@@ -1,3 +1,5 @@
+// The rating data originally came from a .csv file provided by WINC Academy. I wanted to add some students to my app, so decided to just store everything in a file and add to it. Wasn't hard to just fetch the .csv and change it into JSON, but I figured for showcase purposes this made the app more interesting.
+
 import female_1 from "./studentPhotos/female_1.jpg";
 import female_2 from "./studentPhotos/female_2.jpg";
 import female_3 from "./studentPhotos/female_3.jpg";
