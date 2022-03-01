@@ -8,7 +8,7 @@ function App() {
   const { theme, screenSize } = useContext(AppContext);
 
   return (
-    <div className={`${theme} bg-sky-100 lg:h-screen h-auto font-sans`}>
+    <div className={`${theme} bg-sky-100 h-auto font-sans lg:h-screen`}>
       <Switch>
         <Route exact path={"/"}>
           {screenSize < 1024 ? <Redirect to="/student/Evelyn" /> : <Home />}

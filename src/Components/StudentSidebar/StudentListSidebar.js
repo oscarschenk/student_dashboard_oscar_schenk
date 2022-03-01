@@ -25,7 +25,7 @@ function StudentListSidebar() {
         <Disclosure>
           <div className="flex flex-col xl:pl-8 xl:pr-12 lg:pl-12 lg:pr-16">
             <div className="flex flex-row justify-center items-center">
-              <Disclosure.Button className="py-2 text-white flex w-screen lg:w-fit flex-row justify-center items-center">
+              <Disclosure.Button className="py-2 text-white flex w-screen flex-row justify-center items-center lg:w-fit">
                 <div className="w-20">
                   <img
                     className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
@@ -33,7 +33,7 @@ function StudentListSidebar() {
                     alt="Student"
                   ></img>
                 </div>
-                <p className="text-md  hidden lg:block mx-2 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
+                <p className="text-md hidden lg:block mx-2 w-36 text-left ">{`${student.firstName} ${student.lastName}`}</p>
               </Disclosure.Button>
 
               <div>
@@ -73,11 +73,11 @@ function StudentListSidebar() {
                     to={`/student/${student.firstName}`}
                     onClick={emptyFilterList}
                   >
-                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
+                    <button className="bg-dark-sun-600 px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                       Info
                     </button>
                   </Link>
-                  <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
+                  <button className="bg-dark-sun-600 px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                     Call
                   </button>
                   <a
@@ -86,7 +86,7 @@ function StudentListSidebar() {
                     href={`mailto:${student.email}`}
                     rel="noreferrer"
                   >
-                    <button className="bg-dark-sun-600  px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
+                    <button className="bg-dark-sun-600 px-2 my-2 rounded shadow-lg text-white font-bold hover:bg-dark-sun-500 dark:bg-sky-600 hover:dark:bg-sky-500">
                       Message
                     </button>
                   </a>

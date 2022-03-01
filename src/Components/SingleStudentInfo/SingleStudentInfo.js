@@ -14,16 +14,16 @@ function SingleStudentInfo() {
       <div
         id="single-student-overview"
         key={student.id}
-        className="bg-sky-100 h-full flex flex-col justify-center items-center shadow-2xl lg:w-full  lg:px-0 lg:py-0 lg:pt-0 lg:flex-col md:flex-row md:px-8 md:py-10 dark:bg-gray-100"
+        className="bg-sky-100 h-full flex flex-col justify-center items-center shadow-2xl md:flex-row md:px-8 md:py-10 lg:w-full  lg:px-0 lg:py-0 lg:pt-0 lg:flex-col dark:bg-gray-100"
       >
-        <div className="min-h-72 w-2/3 mb-4 h-80 py-8 md:flex items-center justify-center md:w-1/3 md:mb-0 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:mb-8 lg:px-8">
+        <div className="min-h-72 w-2/3 mb-4 h-80 py-8 items-center justify-center md:flex md:w-1/3 md:mb-0 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:mb-8 lg:px-8">
           <img
             className="border-4 border-white shadow-2xl rounded-2xl"
             src={student.photo}
             alt="student"
           />
         </div>
-        <div className=" py-8 bg-gradient-to-b from-gray-700 to-gray-600  text-white px-8 text-xs h-fit  shadow-2xl lg:-mt-4 md:rounded-lg lg:rounded-none md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  ">
+        <div className="py-8 bg-gradient-to-b from-gray-700 to-gray-600  text-white px-8 text-xs h-fit  shadow-2xl lg:-mt-4 md:rounded-lg lg:rounded-none md:ml-4 lg:ml-0 md:w-2/3 lg:w-full  ">
           <div className="flex flex-col items-start justify-center">
             <p className="text-lg lg:text-xl">
               {student.firstName} {student.lastName}

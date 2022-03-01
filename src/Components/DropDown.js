@@ -32,7 +32,7 @@ export default function DropDown() {
   const { theme, toggleTheme } = useContext(AppContext);
   const { firstName } = useParams();
   return (
-    <div className="w-full lg:max-w-lg pl-8 px-4 z-20">
+    <div className="w-full pl-8 px-4 z-20 lg:max-w-lg">
       <Popover className="relative flex flex-col h-32 items-end">
         {({ open }) => (
           <>
@@ -57,7 +57,7 @@ export default function DropDown() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className=" z-20 bg-white relative rounded-lg shadow-2xl  px-4 mt-3 h-screen sm:px-0 ">
+              <Popover.Panel className="z-20 bg-white relative rounded-lg shadow-2xl px-4 mt-3 h-screen sm:px-0">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="flex flex-row rounded-t-lg bg-gray-700 py-3 justify-center gap-3 text-white">
                     <p className="font-bold">Switch Theme</p>
