@@ -28,13 +28,14 @@ function Recharts() {
     ),
   ];
 
+  const reducer = (previousValue, currentValue) => previousValue + currentValue;
+
   // This is a bit of a long one. Basically it takes all the unique assignment names that we generated just above here and for each item it pushes a value for funRating and difficultyRating to their respective arrays. These both get averaged and rounded and we return an object containing the averaged assignmentName, funRating and difficultyRating for whatever 'dataToProcess' is set to. This is used to average all data for the app before sending it to Recharts. Would love to get pointers on how to do this properly and more readable.
 
   const dataToDisplay = listOfAssignments.map((singleAssignmentName) => {
-    const reducer = (previousValue, currentValue) =>
-      previousValue + currentValue;
     const funRating = [];
     const difficultyRating = [];
+
     dataToProcess
       .filter((item) => {
         return item.assignmentName === singleAssignmentName;
@@ -45,12 +46,14 @@ function Recharts() {
           difficultyRating.push(item.difficultyRating)
         );
       });
+
     const funRatingAverage = Math.round(
       funRating.reduce(reducer) / funRating.length
     );
     const difficultyRatingAverage = Math.round(
       difficultyRating.reduce(reducer) / difficultyRating.length
     );
+
     return {
       assignmentName: singleAssignmentName,
       funRating: funRatingAverage,
