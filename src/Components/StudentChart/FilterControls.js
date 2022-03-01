@@ -27,9 +27,7 @@ function FilterControls() {
           firstName ? "text-2xl" : ""
         }`}
       >
-        {firstName
-          ? `${firstName}'s Dashboard`
-          : "Dashboard Student Survey Results 2021"}
+        {firstName ? `${firstName}'s Dashboard` : "Student Survey Results 2021"}
       </h1>
       <div className="filters w-full flex flex-row justify-center mt-2">
         <button

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 import { AppContext } from "./AppContext";
 import Home from "./pages/Home";
 import StudentOverviewPage from "./pages/StudentOverviewPage";
