@@ -1,18 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { ratingData, personalData } from "./Utils/studentData";
 
-const AppContext = React.createContext();
-
-function debounce(fn, ms) {
-  let timer;
-  return (_) => {
-    clearTimeout(timer);
-    timer = setTimeout((_) => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, ms);
-  };
-}
+const AppContext = createContext();
 
 function AppContextProvider(props) {
   const [theme, setTheme] = useState("");
@@ -23,18 +12,12 @@ function AppContextProvider(props) {
   const [funRatingToggle, setFunRatingToggle] = useState(true);
   const [chartTypeToggle, setChartTypeToggle] = useState("line");
   const [studentNameFilterArray, setStudentNameFilterArray] = useState([]);
-  const [screenSize, setScreenSize] = useState(767);
+  const [screenSize, setScreenSize] = useState(1024);
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    const debouncedHandleResize = debounce(function handleResize() {
-      setScreenSize(window.innerWidth);
-    }, 100);
-    window.addEventListener("resize", debouncedHandleResize);
-    return (_) => {
-      window.removeEventListener("resize", debouncedHandleResize);
-    };
-  });
+    setScreenSize(window.innerWidth);
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "" : "dark"));
