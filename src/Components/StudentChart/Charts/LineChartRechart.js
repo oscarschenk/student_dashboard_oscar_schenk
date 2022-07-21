@@ -25,7 +25,7 @@ const LineChartRechart = (props) => {
         minHeight={500}
         minWidth={500}
         width="95%"
-        height={screenSize < 1024 && firstName ? 500 : 700}
+        height={screenSize < 1024 && firstName ? 500 : firstName ? 700 : 800}
       >
         <LineChart
           data={props.data}
