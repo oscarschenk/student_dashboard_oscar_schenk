@@ -16,41 +16,24 @@ function AppContextProvider(props) {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    // Handler to call on window resize
     function handleResize() {
-      // Set window width/height to state
       setScreenSize(window.innerWidth);
     }
-    // Add event listener
     window.addEventListener("resize", handleResize);
-    // Call handler right away so state gets updated with initial window size
     handleResize();
-    // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    // declare the async data fetching function
     const fetchData = async () => {
-      // get the data from the api
       const data = await fetch(
         "https://62d7f570908831393587e674.mockapi.io/personal_data"
       );
-      // convert the data to json
       const json = await data.json();
-      console.log(json);
-
-      // set state with the result
       setStudentData(json);
     };
-
-    // call the function
-    fetchData()
-      // make sure to catch any error
-      .catch(console.error);
+    fetchData().catch(console.error);
   }, []);
-
-  // console.log(JSON.stringify(personalData));
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "" : "dark"));
