@@ -1,22 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import { ratingData } from "./Utils/studentData";
 
-// import female_1 from "./studentPhotos/female_1.jpg";
-// import female_2 from "./studentPhotos/female_2.jpg";
-// import female_3 from "./studentPhotos/female_3.jpg";
-// import female_4 from "./studentPhotos/female_4.jpg";
-// import female_5 from "./studentPhotos/female_5.jpg";
-// import female_6 from "./studentPhotos/female_6.jpg";
-// import female_7 from "./studentPhotos/female_7.jpg";
-// import female_8 from "./studentPhotos/female_8.jpg";
-// import female_9 from "./studentPhotos/female_9.jpg";
-// import male_1 from "./studentPhotos/male_1.jpg";
-// import male_2 from "./studentPhotos/male_2.jpg";
-// import male_3 from "./studentPhotos/male_3.jpg";
-// import male_4 from "./studentPhotos/male_4.jpg";
-// import male_5 from "./studentPhotos/male_5.jpg";
-// import male_6 from "./studentPhotos/male_6.jpg";
-
 const AppContext = createContext();
 
 function AppContextProvider(props) {
@@ -32,7 +16,17 @@ function AppContextProvider(props) {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    setScreenSize(window.innerWidth);
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setScreenSize(window.innerWidth);
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {

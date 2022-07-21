@@ -24,7 +24,7 @@ const BarChartRechart = (props) => {
         minHeight={500}
         minWidth={500}
         width="95%"
-        height={screenSize < 1024 && firstName ? 500 : "100%"}
+        height={screenSize < 1024 && firstName ? 500 : 700}
       >
         <BarChart
           data={props.data}

@@ -7,7 +7,7 @@ import SingleStudentTable from "../Components/SingleStudentInfo/SingleStudentTab
 
 function StudentOverviewPage() {
   return (
-    <div className="w-full h-full min-h-screen lg:h-screen">
+    <div className="w-full h-full  lg:h-full">
       <div className="flex min-h-screen h-fit flex-col md:h-full">
         <div className="h-fit">
           <StudentListContainer />
