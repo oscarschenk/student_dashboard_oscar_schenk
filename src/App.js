@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { AppContext } from "./AppContext";
-import Home from "./pages/Home";
-import StudentOverviewPage from "./pages/StudentOverviewPage";
+import Home from "./Pages/Home";
+import StudentOverviewPage from "./Pages/StudentOverviewPage";
 
 function App() {
   const { theme, screenSize } = useContext(AppContext);

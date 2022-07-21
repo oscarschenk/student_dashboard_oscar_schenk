@@ -1,5 +1,4 @@
 import React, { useContext, Fragment } from "react";
-import { useParams } from "react-router-dom";
 import { AppContext } from "../AppContext";
 import { Popover, Transition, Switch } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -30,7 +29,6 @@ const solutions = [
 
 export default function DropDown() {
   const { theme, toggleTheme } = useContext(AppContext);
-  const { firstName } = useParams();
   return (
     <div className="w-full pl-8 px-4 z-20 lg:max-w-lg">
       <Popover className="relative flex flex-col h-32 items-end">
@@ -104,7 +102,7 @@ export default function DropDown() {
                     <a
                       href="https://github.com/oscarschenk/student_dashboard_oscar_schenk"
                       target="_blank"
-                      rel="_noreferer"
+                      rel="noreferrer"
                       className="flow-root px-2 py-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-800 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex items-center">

@@ -4,13 +4,8 @@ import { Link } from "react-router-dom";
 import { Switch, Disclosure, Transition } from "@headlessui/react";
 
 function StudentListSidebar() {
-  const {
-    studentData,
-    filterToggle,
-    theme,
-    studentNameFilterArray,
-    emptyFilterList,
-  } = useContext(AppContext);
+  const { studentData, filterToggle, studentNameFilterArray, emptyFilterList } =
+    useContext(AppContext);
 
   const studentAvatar = studentData.map((student) => {
     const imgBorderColor = studentNameFilterArray.includes(student.firstName)
@@ -29,7 +24,7 @@ function StudentListSidebar() {
                 <div className="w-20">
                   <img
                     className={`h-20  border-4 shadow-2xl rounded-full hover:scale-105 ${imgBorderColor}`}
-                    src={student.photo}
+                    src={`/studentPhotos/${student.photo}.jpg`}
                     alt="Student"
                   ></img>
                 </div>

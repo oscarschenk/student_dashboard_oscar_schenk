@@ -19,7 +19,7 @@ function SingleStudentInfo() {
         <div className="min-h-72 w-2/3 mb-4 h-80 py-8 items-center justify-center md:flex md:w-1/3 md:mb-0 md:h-72 lg:pt-12 lg:w-full lg:h-1/2 lg:mb-8 lg:px-8">
           <img
             className="border-4 border-white shadow-2xl rounded-2xl"
-            src={student.photo}
+            src={`/studentPhotos/${student.photo}.jpg`}
             alt="student"
           />
         </div>

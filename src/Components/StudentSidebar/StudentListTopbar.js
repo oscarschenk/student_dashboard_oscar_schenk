@@ -17,7 +17,7 @@ function StudentListTopbar() {
                   ? "border-emerald-500 dark:border-yellow-500"
                   : "border-dark-sun-600 dark:border-sky-600"
               } shadow-2xl rounded-full hover:scale-105`}
-              src={student.photo}
+              src={`/studentPhotos/${student.photo}.jpg`}
               alt="Student"
             ></img>
           </Link>
